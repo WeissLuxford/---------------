@@ -14,11 +14,11 @@ function giveAnswer() {
     let ndsSum = sum.value/100*88;
     let answer = 0;
     if(childNumber.value == "Один ребенок"){
-        answer = ndsSum/4 <= 243800 ? 243800 : ndsSum/4;
+        answer = ndsSum/4 <= 278250 ? 278250 : ndsSum/4;
     } else if(childNumber.value == "Два ребенка"){
-        answer = ndsSum/3 <= 487600 ? 487600 : ndsSum/3;
+        answer = ndsSum/3 <= 556500 ? 556500 : ndsSum/3;
     } else if(childNumber.value == "Три и больше"){
-        answer = ndsSum/2 <= 731400 ? 731400 : ndsSum/2;
+        answer = ndsSum/2 <= 834750 ? 834750 : ndsSum/2;
     }
     return answerSum.innerHTML = `${Math.trunc(answer)} сум` ;  
 }
